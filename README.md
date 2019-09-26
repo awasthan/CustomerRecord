@@ -1,2 +1,2 @@
 # CustomerRecord
-This repository contains a Rest API, a Shared Library and a Java project. The RestAPI references to the Shared Library and Java Project.
+This repository contains a Rest API (CustomerRecordAPI), a Shared Library (CustomerDetail.Lib) and a Java project(CustomerRecord.AppJava). The RestAPI references to the Shared Library and Java Project.

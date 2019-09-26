@@ -1,0 +1,83 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "title" : "CustomerRecordAPI",
+    "version" : "1.0.0",
+    "description" : "CustomerRecordAPI"
+  },
+  "paths" : {
+    "/addCustomer" : {
+      "post" : {
+        "operationId" : "postAddCustomer",
+        "responses" : {
+          "200" : {
+            "description" : "The operation was successful.",
+            "schema" : {
+              "$ref" : "#/definitions/CustomerDetailResponse"
+            }
+          }
+        },
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "description" : "Insert a addCustomer",
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "schema" : {
+            "$ref" : "#/definitions/CustomerDetailRequest"
+          },
+          "description" : "The request body for the operation",
+          "required" : true
+        } ]
+      }
+    }
+  },
+  "basePath" : "/customerrecordapi/v1",
+  "definitions" : {
+    "CustomerDetailRequest" : {
+      "type" : "object",
+      "properties" : {
+        "fname" : {
+          "type" : "string"
+        },
+        "lname" : {
+          "type" : "string"
+        },
+        "city" : {
+          "type" : "string"
+        },
+        "state" : {
+          "type" : "string"
+        },
+        "country" : {
+          "type" : "string"
+        },
+        "phone" : {
+          "type" : "string"
+        }
+      }
+    },
+    "CustomerDetailResponse" : {
+      "type" : "object",
+      "properties" : {
+        "Status" : {
+          "type" : "string"
+        },
+        "ResponseMsg" : {
+          "type" : "string"
+        },
+        "errorDetail" : {
+          "type" : "string"
+        },
+        "ResponseCode" : {
+          "type" : "string"
+        },
+        "CurrentTime" : {
+          "type" : "string"
+        }
+      }
+    }
+  },
+  "schemes" : [ "http" ],
+  "host" : "ubuntu:7803"
+}

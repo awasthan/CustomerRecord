@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.ibm.esb</groupId>
 	<artifactId>CustomerDetail.Lib</artifactId>
-	<version>1.0.01-SNAPSHOT</version>
+	<version>1.0.01</version>
 	<packaging>ace-bar</packaging>
 	<name>${project.artifactId}</name>
 
@@ -75,6 +75,6 @@
 	<scm>
 		<url>git@github.com:awasthan/CustomerRecord.git</url>
 		<connection>scm:git:git@github.com:awasthan/CustomerRecord.git</connection>
-	  <tag>HEAD</tag>
+	  <tag>CustomerDetail.Lib-1.0.01</tag>
   </scm>	
 </project>
